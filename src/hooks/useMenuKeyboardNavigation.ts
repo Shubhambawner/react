@@ -70,7 +70,9 @@ const useMoveFocusToMenuItem = (
 
       if (event.key === 'ArrowDown') {
         // TODO: does commenting this out break anything?
-        // event.preventDefault() // prevent scroll event
+        // NO, but it does triger an unnecessary scroll down event when keyboard is used to open the dropdown
+        // as when this event falls down to document, its default scroll is trigered.
+        event.preventDefault() // prevent scroll event
         const firstElement = iterable.next().value
         /** We push imperative focus to the next tick to prevent React's batching */
         setTimeout(() => firstElement?.focus())
