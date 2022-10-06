@@ -1,5 +1,52 @@
 # @primer/components
 
+## 35.10.0
+
+### Minor Changes
+
+- [#2347](https://github.com/primer/react/pull/2347) [`09a5d806`](https://github.com/primer/react/commit/09a5d8064b794221be4cd961759ec15c1eea2a02) Thanks [@mperrotti](https://github.com/mperrotti)! - Adds a `size` prop to the SegmentedControl component. Users can choose between 'medium' (default), and 'small'. More sizes can be added when/if we find we need them.
+
+* [#2324](https://github.com/primer/react/pull/2324) [`027e44a7`](https://github.com/primer/react/commit/027e44a73542a9b115d688a7f16a0f63c2d9d86f) Thanks [@joshblack](https://github.com/joshblack)! - Update PageLayout.Pane to support a ref on the element wrapping children
+
+### Patch Changes
+
+- [#2355](https://github.com/primer/react/pull/2355) [`e052644d`](https://github.com/primer/react/commit/e052644d75068438e69c68a86344ad0e8a7a02b0) Thanks [@mperrotti](https://github.com/mperrotti)! - Fixes the sx prop on the SegmentedControl buttons by properly merging the sx prop when cloning button children.
+
+* [#2305](https://github.com/primer/react/pull/2305) [`6cd50a54`](https://github.com/primer/react/commit/6cd50a54f8b399eef751507d44ffbfa35ede3d9f) Thanks [@colebemis](https://github.com/colebemis)! - Add draft TreeView component
+
+- [#2350](https://github.com/primer/react/pull/2350) [`61a93e20`](https://github.com/primer/react/commit/61a93e20d9a7ced443ef5c2ee6b93bcefcd9c78e) Thanks [@colebemis](https://github.com/colebemis)! - Adds lines to indicate the depth of items in a TreeView
+
+* [#2331](https://github.com/primer/react/pull/2331) [`31b8804c`](https://github.com/primer/react/commit/31b8804cf346412b7365cd411f6ee14e22f4a19d) Thanks [@colebemis](https://github.com/colebemis)! - Adds support for arrow key navigation of a TreeView using `aria-activedescendant`
+
+- [#2338](https://github.com/primer/react/pull/2338) [`68c49803`](https://github.com/primer/react/commit/68c498038c097cfd339ff3feddc54221e6ed438d) Thanks [@broccolinisoup](https://github.com/broccolinisoup)! - Reverted SelectPanel breaking behavioral changes
+
+* [#2348](https://github.com/primer/react/pull/2348) [`c76e1610`](https://github.com/primer/react/commit/c76e161081573240c212b3dcfad5af5457a7312a) Thanks [@colebemis](https://github.com/colebemis)! - Add a `current` prop to `TreeView.Item` and `TreeView.LinkItem`
+
+- [#2356](https://github.com/primer/react/pull/2356) [`e2fb2fca`](https://github.com/primer/react/commit/e2fb2fca2792470dda584a81f18d1389b57239f6) Thanks [@nicolleromero](https://github.com/nicolleromero)! - MarkdownViewer bug fix: Only run `replaceChildren` when `htmlContainer` changes
+
+## 35.9.0
+
+### Minor Changes
+
+- [#2294](https://github.com/primer/react/pull/2294) [`4536b87a`](https://github.com/primer/react/commit/4536b87ad63d4aa3b6608c9d36673f45b304b4eb) Thanks [@joshblack](https://github.com/joshblack)! - Add support for `aria-label` and `aria-labelledby` to `PageLayout`
+
+* [#2262](https://github.com/primer/react/pull/2262) [`3ec0c9db`](https://github.com/primer/react/commit/3ec0c9dbe4b56273cb36ca2fb363cd952da8e6a2) Thanks [@broccolinisoup](https://github.com/broccolinisoup)! - Rename `stickyTop` prop name for the PageLayout to `offsetHeader` and improve docs
+
+- [#2277](https://github.com/primer/react/pull/2277) [`cc88235e`](https://github.com/primer/react/commit/cc88235e1d65a308458306855641fd41712f068c) Thanks [@broccolinisoup](https://github.com/broccolinisoup)! - UnderlineNav.Link renamed to UnderlineNav.Item along with updated styles
+
+### Patch Changes
+
+- [#2266](https://github.com/primer/react/pull/2266) [`4cc6e52a`](https://github.com/primer/react/commit/4cc6e52a64f70065626607618931e35b419abc59) Thanks [@siddharthkp](https://github.com/siddharthkp)! - ActionMenu: Fix keyboard navigation for ActionMenu inside Overlay by re-enabling focus trap. It was disabled in v35.6.0, that led to a regression for ActionMenu within focus zones (example: AnchoredOverlay)
+
+* [#2252](https://github.com/primer/react/pull/2252) [`e52415e1`](https://github.com/primer/react/commit/e52415e1b1f00b8693d22dc8b1aa7eb74f6df83e) Thanks [@joshblack](https://github.com/joshblack)! - Update ButtonBase.tsx to memoize calls to styles to improve performance
+
+- [#2318](https://github.com/primer/react/pull/2318) [`10305092`](https://github.com/primer/react/commit/1030509285941da9b82680ff07c56a787178bcb5) Thanks [@iansan5653](https://github.com/iansan5653)! - - Fix `InlineAutocomplete` accessibility hint affecting page layout outside of the suggestions
+  - Fix suggestion icons not being visible in `InlineAutocomplete` items
+
+* [#2206](https://github.com/primer/react/pull/2206) [`3a38e6e3`](https://github.com/primer/react/commit/3a38e6e34b16eec6ce4c0357fd5ce4095e384550) Thanks [@maximedegreve](https://github.com/maximedegreve)! - Add missing border on avatars
+
+- [#2294](https://github.com/primer/react/pull/2294) [`4536b87a`](https://github.com/primer/react/commit/4536b87ad63d4aa3b6608c9d36673f45b304b4eb) Thanks [@joshblack](https://github.com/joshblack)! - Change the default markup of `PageLayout.Pane` from `<aside>` to `<div>`
+
 ## 35.8.0
 
 ### Minor Changes
